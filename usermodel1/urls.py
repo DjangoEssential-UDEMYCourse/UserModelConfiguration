@@ -23,6 +23,6 @@ urlpatterns = [
 '''
 Forma de como alterar Titulos do Django admin
 '''
-admin.site.site_header = 'Curso de DJango Geek'
+admin.site.site_header = 'DJango Admin'
 admin.site.site_title = 'Evolua seu lado Geek'
 admin.site.index_title = 'Sistema de Gerenciamento de Posts'
