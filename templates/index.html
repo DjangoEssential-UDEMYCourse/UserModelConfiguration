@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content%}
+  <div class="container">
+    <div class="row">
+      <div class="center-align">
+        <h1>
+          <span class="flow-text">Udemy Geek Djando Course</span>
+        </h1>
+
+        {% if user.is_anonymous %}
+            <a href="{% url 'login' %}" class="btn indigo darken-1 waves-effect waves-light">Login</a>
+        {% else %}
+            <article class="alert alert-success" role="alert" data-mb-color="success">
+                Seja Bem-vindo(a) {{ user.get_full_name }}!
+            </article>
+            <a href="{% url 'logout' %}" class="btn waves-effect waves-light">Logout</a>
+      {% endif %}
+      </div>
+    </div>
+  </div>
+{% endblock %}

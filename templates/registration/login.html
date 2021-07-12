@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="container">
+    <center>
+      <div class="center-align">
+        <div  class="z-depth-3 y-depth-3 x-depth-3 grey green-text lighten-4 row"
+              style="display: inline-block;  border: 1px; margin-top: 52px; solid #EEE;">
+
+          <div class="section"><img src="https://geekuniversity.com.br/static/images/favicon.ico" width="50px" height="50px"/></div>
+          <div class="divider"></div>
+
+          <form class="form-signin" method="post" autocomplete="off">
+            {% csrf_token %}
+
+            <div class="row">
+              <!-- Email input -->
+              <div class="input-field col s12">
+                <input id="username" name="username" type="email" class="validate">
+                <label for="username">E-mail</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <!-- Password input -->
+              <div class="input-field col s12">
+                <input id="password" name="password" type="password" class="validate">
+                <label for="password">Password</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col s6">
+                <label>
+                  <input type="checkbox" checked="checked" />
+                  <span>Manter Conectado</span>
+                </label>
+              </div>
+              <div class="col s6">
+                <a href="#!">Esqueceu a senha?</a>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col s12">
+
+                <!-- Submit button -->
+                <button type="submit" class="waves-effect waves-light btn blue ">Acessar área de membros</button>
+
+                <!-- Register buttons -->
+                <div class="text-center">
+                  <p>Não é um membro? <a href="#!">Cadastre-se</a></p>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </center>
+  </div>
+{% endblock %}
+
+
+
+
+<img src="https://geekuniversity.com.br/static/images/favicon.ico" class="img-fluid" width="72px" height="72px"/>
+
